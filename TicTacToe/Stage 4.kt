@@ -146,7 +146,6 @@ fun userInput(cells: String): String {
     }
 }
 
-// TODO: maybe use other/better class to store state than String?
 fun main() {
     print("Enter cells:")
     var cells = readLine()!!
@@ -156,5 +155,5 @@ fun main() {
     cells = userInput(cells)
     printTable(cells)
 
-    valuateStatete(cells)
+    valuateState(cells)
 }
