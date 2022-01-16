@@ -24,7 +24,7 @@ fun valuateRows(cells: String): String? {
             for (otherRow in 0..2) {
                 if (row != otherRow) {
                     if (setRow(cells, otherRow) == "OOO") {
-                        return "Out od Question"
+                        return "Out of Question!"
                     }
                 }
             }
@@ -34,7 +34,7 @@ fun valuateRows(cells: String): String? {
             for (otherRow in 0..2) {
                 if (row != otherRow) {
                     if (setRow(cells, otherRow) == "XXX") {
-                        return "Out od Question"
+                        return "Out of Question!"
                     }
                 }
             }
@@ -52,7 +52,7 @@ fun valuateColumns(cells: String): String? {
             for (otherCol in 0..2) {
                 if (col != otherCol) {
                     if (setCol(cells, otherCol) == "OOO") {
-                        return "Out od Question"
+                        return "Out of Question!"
                     }
                 }
             }
@@ -62,7 +62,7 @@ fun valuateColumns(cells: String): String? {
             for (otherCol in 0..2) {
                 if (col != otherCol) {
                     if (setCol(cells, otherCol) == "XXX") {
-                        return "Out od Question"
+                        return "Out of Question!"
                     }
                 }
             }
@@ -86,7 +86,7 @@ fun valuateState(cells: String) {
     val countX = cells.filter { it == 'X' }.length
     val countO = cells.filter { it == 'O' }.length
     if (kotlin.math.abs(countO - countX) > 1) {
-        println("Out od Question")
+        println("Out of Question!")
         return
     }
 
