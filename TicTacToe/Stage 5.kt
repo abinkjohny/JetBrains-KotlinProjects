@@ -159,12 +159,12 @@ fun main() {
     var cells = "_________" // empty field
     var player = "X"
 
-    printBoard(cells)
+    printTable(cells)
 
     do {
         cells = userInput(cells, player)
         player = togglePlayer(player)
-        printBoard(cells)
+        printTable(cells)
 
         val end = valuateState(cells)
     } while (!end)
